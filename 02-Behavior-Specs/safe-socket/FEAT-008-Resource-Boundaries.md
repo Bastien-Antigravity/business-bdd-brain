@@ -1,7 +1,7 @@
 ---
 repo: safe-socket
 feature_id: FEAT-008
-status: draft
+status: active
 ---
 
 # Feature: Resource Boundaries & Hardening

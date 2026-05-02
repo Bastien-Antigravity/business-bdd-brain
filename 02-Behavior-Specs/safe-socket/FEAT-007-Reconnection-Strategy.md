@@ -1,7 +1,7 @@
 ---
 repo: safe-socket
 feature_id: FEAT-007
-status: draft
+status: active
 ---
 
 # Feature: Automatic Reconnection

@@ -1,7 +1,7 @@
 ---
 repo: safe-socket
 feature_id: FEAT-006
-status: draft
+status: active
 ---
 
 # Feature: Graceful Shutdown
