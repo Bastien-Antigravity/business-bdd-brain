@@ -14,10 +14,13 @@ This document explains how to write and organize Behavior-Driven Development (BD
 Behavior-Driven Development defines the **expected behavior** of a system in plain language before any code is written. We then run tests to check if the system matches those expectations.
 
 The cycle is:
-1. **Define** behavior specs in `business-bdd-brain`.
-2. **Generate** test skeletons via the AI QA Agent.
-3. **Execute** tests in `sandbox-testing`.
-4. **Verify** the microservice code passes the specs.
+1. **Define** behavior specs in `business-bdd-brain/02-Behavior-Specs/[repo-name]`.
+2. **Spec Specialist Phase**: The AI drafts a detailed Gherkin spec based on the user's intent.
+3. **Approval Gate**: User explicitly approves the spec (`status: approved`).
+4. **Implementation**: AI implements the code ONLY after approval.
+5. **Generate** test skeletons via the AI QA Agent.
+6. **Execute** tests in `sandbox-testing`.
+7. **Verify** the microservice code passes the specs.
 
 ## 2. Writing a Behavior Spec
 
