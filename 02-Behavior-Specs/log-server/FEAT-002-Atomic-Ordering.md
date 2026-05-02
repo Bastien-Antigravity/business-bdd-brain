@@ -1,7 +1,7 @@
 ---
 repo: log-server
 feature_id: FEAT-002
-status: draft
+status: active
 ---
 
 # Feature: Atomic Sequencing & Re-ordering
@@ -27,7 +27,7 @@ status: draft
 
 ### Scenario 3: Missing Sequence Warning
 - **Given** the sequencer expects ID `N` but receives ID `N+1` (potential drop)
-- **When** the buffer is flushed after a timeout
+- **When** the buffer is flushed after a **500ms** timeout
 - **Then** the server must log a warning about a "Sequence Gap" to indicate potential data loss in the ingestion pipeline
 
 ## 🛠️ Technical Constraints
