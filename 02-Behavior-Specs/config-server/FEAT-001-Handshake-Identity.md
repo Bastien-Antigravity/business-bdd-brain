@@ -1,7 +1,13 @@
 ---
 repo: config-server
+microservice: config-server
+type: behavior-spec
+status: active
 feature_id: FEAT-001
-status: draft
+---
+# FEAT-001: Mutual Identity Handshake
+
+*Back-link: [[config-server/README|⬅️ config-server]]*
 ---
 
 # Feature: Handshake & Identity Verification
