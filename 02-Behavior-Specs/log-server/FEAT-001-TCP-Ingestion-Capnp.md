@@ -1,38 +1,36 @@
 ---
 repo: log-server
 feature_id: FEAT-001
-status: draft
+status: active
 ---
 
 # Feature: TCP Ingestion (Cap'n Proto)
 
 ## 🎯 Business Intent
-- **User Story**: As a system administrator, I want the log server to receive logs via a high-performance binary protocol so that we can handle thousands of messages per second with minimal CPU and memory usage.
-- **Problem Solved**: Eliminates the overhead of text-based protocols (like JSON) and ensures message integrity via strict framing.
+- **User Story**: As a high-performance service, I want to send logs over a persistent TCP connection using a binary protocol so that I can minimize latency and serialization overhead.
+- **Problem Solved**: Eliminates the overhead of text-based protocols and ensures message integrity via strict binary framing.
 
 ## 🎬 Scenarios (Gherkin)
 
-### Scenario 1: Successful Frame Decoding
-- **Given** a TCP client sending a 4-byte big-endian length prefix `L`
-- **And** a payload of exactly `L` bytes containing a Cap'n Proto `LogEntry`
-- **When** the server receives the frame
-- **Then** it must correctly decode the binary payload using the `logger.capnp` schema
-- **And** it must convert the data into the internal `LogEntry` model
-- **And** it must assign a global sequence number to the entry
+### Scenario 1: Packed Frame Decoding
+- **Given** an established TCP connection
+- **When** the server receives a data frame
+- **Then** it must decode the binary payload using the `serialize_packed::read_message` method
+- **And** it must map the data to the internal `LogEntry` model using the `logger.capnp` schema.
 
-### Scenario 2: Oversized Frame Rejection
-- **Given** a client attempting to send a frame header claiming 100MB of data
-- **When** the server reads the header
-- **Then** it must immediately reject the frame if it exceeds the `MAX_FRAME_SIZE` (default 64KB)
-- **And** it must close the connection to protect server memory
+### Scenario 2: Framing Constraints (SafeSocket)
+- **Given** a raw TCP stream
+- **When** the server reads from the stream
+- **Then** it must use `SafeSocket` to enforce a 4-byte big-endian length prefix
+- **And** it must reject any frame larger than `MAX_FRAME_SIZE` (64KB).
 
-### Scenario 3: Partial Message Handling
-- **Given** a client that sends a valid length header but disconnects before sending the full payload
-- **When** the server's read timeout expires
-- **Then** it must discard the partial data
-- **And** it must log a "Protocol Violation" warning
+### Scenario 3: Deserialization Failure
+- **Given** a valid frame with invalid Cap'n Proto content
+- **When** deserialization fails
+- **Then** the server must log a "Deserialization Failed" warning
+- **And** it must NOT crash the connection, continuing to wait for the next frame.
 
 ## 🛠️ Technical Constraints
-- **Protocol**: MUST use Big-Endian 4-byte length prefix.
-- **Library**: MUST use the `capnp` Rust crate.
-- **Buffer**: Use a pre-allocated buffer for reading to minimize heap allocations.
+- **Encoding**: MUST use **Packed** Cap'n Proto for log messages (unlike the handshake).
+- **Framing**: 4-byte Big-Endian length prefix.
+- **Library**: `capnp` and `tokio`.

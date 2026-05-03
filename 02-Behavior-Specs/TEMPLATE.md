@@ -34,3 +34,7 @@ status: draft # [draft, approved, implemented, deprecated]
 - [ ] Unit tests pass for all scenarios.
 - [ ] Parity verified across all facades (if applicable).
 - [ ] Documentation updated in README/ARCHITECTURE.
+
+## 🔗 Sandbox Binding
+- **Feature**: `[[sandbox-testing/features/FEAT-XXX-<name>.yaml]]`
+- **Implementation**: `sandbox-testing/implementations/<lang>/<test_file>`

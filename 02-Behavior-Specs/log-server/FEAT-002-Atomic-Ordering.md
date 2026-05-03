@@ -21,15 +21,24 @@ status: active
 ### Scenario 2: BTreeMap Re-ordering
 - **Given** a batch of messages arriving out-of-order due to network jitter
 - **When** the `LogWriter` prepares to write to disk
-- **Then** it must store the messages in a `BTreeMap<u64, LogEntry>`
+- **Then** it must store the messages in a `BTreeMap<u64, String>`
 - **And** it must iterate over the map in ascending order of the sequence IDs
 - **And** it must write the sorted results to the log file
 
 ### Scenario 3: Missing Sequence Warning
 - **Given** the sequencer expects ID `N` but receives ID `N+1` (potential drop)
-- **When** the buffer is flushed after a **500ms** timeout
-- **Then** the server must log a warning about a "Sequence Gap" to indicate potential data loss in the ingestion pipeline
+- **When** the "Gap Timer" (500ms) ticks without receiving ID `N`
+- **Then** the server must log a `[SEQUENCE_GAP_WARNING]`
+- **And** it must skip to ID `N+1` to resume processing.
+
+### Scenario 4: Buffer Pressure (Force Progress)
+- **Given** the internal `BTreeMap` reaches the current `batch_size`
+- **And** the expected sequence number `current_sequence` is still missing
+- **When** a new message arrives
+- **Then** the server must "Force Progress" by jumping to the lowest available sequence number in the buffer
+- **And** it must log a `[BUFFER_FULL_WARNING]` to indicate potential data loss due to memory constraints.
 
 ## 🛠️ Technical Constraints
 - **Mechanism**: MUST use `std::sync::atomic::AtomicU64` for sequencing.
 - **Storage**: Use `std::collections::BTreeMap` for efficient in-memory sorting.
+- **Backpressure**: Buffer size is limited to 1024 entries before pressure logic triggers.

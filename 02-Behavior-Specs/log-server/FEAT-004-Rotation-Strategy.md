@@ -1,10 +1,10 @@
 ---
 repo: log-server
 feature_id: FEAT-004
-status: draft
+status: active
 ---
 
-# Feature: Log Rotation & Pruning
+# Feature: Log Rotation Strategy
 
 ## 🎯 Business Intent
 - **User Story**: As a server admin, I want the log server to automatically rotate log files when they reach a certain size so that I don't run out of disk space and I can easily archive old logs.
@@ -12,26 +12,26 @@ status: draft
 
 ## 🎬 Scenarios (Gherkin)
 
-### Scenario 1: Size-Based Rotation
-- **Given** the active log file `_main.log` reaches 100MB
-- **When** the next log entry is written
-- **Then** the server must close the current file
-- **And** it must rename it to `_main.log.1` (or timestamp-based)
-- **And** it must create a fresh, empty `_main.log` for new entries
-- **And** it should shift existing backups (`.1` -> `.2`, etc.)
+### Scenario 1: Size-Based Rotation Trigger
+- **Given** the active log file `_main.log` reaches 1MB (default)
+- **When** the current batch is written and the file exceeds `max_file_bytes`
+- **Then** the server must trigger the rotation logic.
 
-### Scenario 2: Atomic Handover
-- **Given** a rotation in progress
-- **When** new logs arrive during the file swap
-- **Then** the server must buffer those logs in memory
-- **And** it must NOT drop them while the new file is being created
-- **And** it must write them as the first entries in the new file
+### Scenario 2: Sequential File Shifting
+- **Given** a rotation is triggered
+- **When** the server shifts files
+- **Then** it must rename `_main.log.9` to `_main.log.10` (if 10 is the max)
+- **And** it must rename `_main.log.0` to `_main.log.1`
+- **And** finally it must rename the active `_main.log` to `_main.log.0`.
 
-### Scenario 3: Retention Policy (Pruning)
-- **Given** a maximum of 10 backup files
-- **When** the 11th rotation occurs
-- **Then** the server must delete the oldest backup file (`.10`)
-- **And** it must log the deletion to confirm disk space management
+### Scenario 3: Atomic Re-creation
+- **Given** the files have been shifted
+- **When** the rotation finishes
+- **Then** the server must create a new, empty `_main.log` file
+- **And** it must reset the `file_size` counter to 0
+- **And** it must resume writing from the buffer.
 
 ## 🛠️ Technical Constraints
-- **Library**: Recommend using `flexi_logger` or `log4rs` in Rust for the low-level file management, but the "Atomic Handover" must be guaranteed by the `LogWriter` logic.
+- **Default Size**: 1MB per file.
+- **Backup Count**: Default 10 files.
+- **File Format**: `_main.log` (active), `_main.log.N` (backups).

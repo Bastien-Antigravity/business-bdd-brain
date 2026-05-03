@@ -71,8 +71,8 @@ Behavior specs are organized by **microservice domain**:
 ## 4. Linking to Sandbox Testing
 
 Each behavior spec can be linked to its corresponding test scenario in `sandbox-testing` using standard Obsidian links:
-- **Spec → Test**: Add `[[sandbox-testing/scenarios/<scenario-file>]]` in the behavior spec.
-- **Test → Spec**: Add `[[business-bdd-brain/02-Behavior-Specs/<spec-file>]]` in the test scenario.
+- **Spec → Test**: Add `[[sandbox-testing/features/FEAT-XXX-<name>.yaml]]` in the behavior spec.
+- **Test → Spec**: Add `# Spec: [[business-bdd-brain/02-Behavior-Specs/<spec-file>]]` in the feature YAML header.
 
 ## 5. Domain Glossary
 

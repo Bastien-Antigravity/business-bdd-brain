@@ -1,7 +1,7 @@
 ---
 repo: log-server
 feature_id: FEAT-003
-status: draft
+status: active
 ---
 
 # Feature: Dynamic Batch Writing
@@ -12,26 +12,31 @@ status: draft
 
 ## 🎬 Scenarios (Gherkin)
 
-### Scenario 1: High-Load Batching
-- **Given** a burst of 5000 logs arriving in 1 second
-- **When** the `LogWriter` processes the queue
-- **Then** it should group messages into batches of 1000
-- **And** it should perform 5 large writes instead of 5000 small ones
-- **And** it must ensure all 1000 messages are flushed to disk before starting the next batch
+### Scenario 1: High-Load Batch Size Doubling
+- **Given** a high volume of logs filling the internal buffer
+- **When** the buffer length exceeds the current `batch_size`
+- **Then** the server must double the `batch_size` (up to a maximum of 1000)
+- **And** it must flush the current batch to disk immediately.
 
-### Scenario 2: Idle Real-Time Flush
-- **Given** only 5 messages arrive in 10 seconds
-- **When** the "Idle Timeout" (e.g. 100ms) is reached
-- **Then** the server must immediately flush those 5 messages to disk
-- **And** it must NOT wait for the batch to fill up to 1000
-- **And** this ensures that logs are visible in the file almost in real-time
+### Scenario 2: Idle Load Batch Size Halving
+- **Given** a low volume of logs
+- **When** the buffer length is less than half of the current `batch_size`
+- **Then** the server must halve the `batch_size` (down to a minimum of 10)
+- **And** this ensures faster flushes during idle periods.
 
-### Scenario 3: Memory Backpressure
-- **Given** a disk that is too slow to handle the incoming batching
-- **When** the internal buffer exceeds 50,000 entries
-- **Then** the server must apply "Backpressure" by slowing down the TCP acceptance rate
-- **And** it must log an "I/O Saturation" warning
+### Scenario 3: Real-Time Flush (Gap Timer)
+- **Given** a few messages in the buffer
+- **When** the 500ms `gap_timeout` is reached without a full batch
+- **Then** the server must flush the available messages to disk
+- **And** this ensures that logs are visible in the file even during very low traffic.
+
+### Scenario 4: Retry Strategy
+- **Given** a disk write failure
+- **When** the error occurs
+- **Then** the server must retry the write operation 3 times with a 100ms delay between attempts
+- **And** if all retries fail, it must log a critical I/O error and stop the writer task.
 
 ## 🛠️ Technical Constraints
 - **Batch Range**: Min 10, Max 1000 entries per write.
-- **Timeout**: Flush must occur every 100ms regardless of batch size.
+- **Initial Batch**: Starts at 100 entries.
+- **Retry Logic**: 3 retries, 100ms delay.
