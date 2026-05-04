@@ -1,5 +1,5 @@
 ---
-microservice: business-bdd-brain
+microservice: 02-Business-BDD
 type: repository
 status: active
 tags:
@@ -18,7 +18,7 @@ This repository serves as the **Behavior Specification Layer** for the Bastien-A
 
 This brain is **100% Stateless** and contains no executable code. It stores pure behavioral expectations that are consumed by two downstream systems:
 
-1. **AI QA Agent** (`core-kms-brain/Role-Prompts/04-QA/`): Reads the behavior specs to generate executable test skeletons.
+1. **AI QA Agent** (`07-Core-KMS/Role-Prompts/04-QA/`): Reads the behavior specs to generate executable test skeletons.
 2. **Sandbox Testing** (`sandbox-testing/`): Executes the generated tests against real infrastructure (Native or Docker mode).
 
 ## 📦 What's Inside?
@@ -33,7 +33,7 @@ This repository is injected as a **Git Submodule** into the master `obsidian-bra
 
 The flow is:
 ```
-business-bdd-brain (WHAT) → sandbox-testing (HOW) → microservice (CODE)
+02-Business-BDD (WHAT) → sandbox-testing (HOW) → microservice (CODE)
 ```
 
 For detailed instructions on writing behavior specs, please read the **[[User-Manual.md]]**.

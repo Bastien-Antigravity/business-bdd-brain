@@ -2,7 +2,7 @@
 title: "BDD Brain User Manual"
 type: architecture
 status: active
-microservice: business-bdd-brain
+microservice: 02-Business-BDD
 ---
 
 # 📖 Business BDD Brain: User Manual
@@ -14,7 +14,7 @@ This document explains how to write and organize Behavior-Driven Development (BD
 Behavior-Driven Development defines the **expected behavior** of a system in plain language before any code is written. We then run tests to check if the system matches those expectations.
 
 The cycle is:
-1. **Define** behavior specs in `business-bdd-brain/02-Behavior-Specs/[repo-name]`.
+1. **Define** behavior specs in `02-Business-BDD/02-Behavior-Specs/[repo-name]`.
 2. **Spec Specialist Phase**: The AI drafts a detailed Gherkin spec based on the user's intent.
 3. **Approval Gate**: User explicitly approves the spec (`status: approved`).
 4. **Implementation**: AI implements the code ONLY after approval.
@@ -72,7 +72,7 @@ Behavior specs are organized by **microservice domain**:
 
 Each behavior spec can be linked to its corresponding test scenario in `sandbox-testing` using standard Obsidian links:
 - **Spec → Test**: Add `[[sandbox-testing/features/FEAT-XXX-<name>.yaml]]` in the behavior spec.
-- **Test → Spec**: Add `# Spec: [[business-bdd-brain/02-Behavior-Specs/<spec-file>]]` in the feature YAML header.
+- **Test → Spec**: Add `# Spec: [[02-Business-BDD/02-Behavior-Specs/<spec-file>]]` in the feature YAML header.
 
 ## 5. Domain Glossary
 
