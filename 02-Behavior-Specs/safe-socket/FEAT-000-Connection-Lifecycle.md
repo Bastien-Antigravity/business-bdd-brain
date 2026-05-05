@@ -1,4 +1,4 @@
----
+--- 
 title: "SafeSocket Connection Lifecycle"
 type: behavior-spec
 status: active

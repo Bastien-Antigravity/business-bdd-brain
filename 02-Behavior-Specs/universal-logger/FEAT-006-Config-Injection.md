@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: universal-logger
 feature_id: FEAT-006
 status: draft

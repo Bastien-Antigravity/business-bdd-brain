@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: microservice-toolbox
 feature_id: FEAT-005
 status: draft

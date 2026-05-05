@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: data-ingestor
 feature_id: FEAT-002
 status: draft

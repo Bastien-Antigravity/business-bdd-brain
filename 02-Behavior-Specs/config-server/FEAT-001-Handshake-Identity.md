@@ -1,4 +1,4 @@
----
+--- 
 repo: config-server
 microservice: config-server
 type: behavior-spec

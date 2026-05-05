@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: safe-socket
 feature_id: FEAT-003
 status: draft

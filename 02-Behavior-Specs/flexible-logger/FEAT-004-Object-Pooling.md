@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: flexible-logger
 feature_id: FEAT-004
 status: draft

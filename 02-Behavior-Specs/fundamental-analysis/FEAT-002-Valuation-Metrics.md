@@ -1,4 +1,7 @@
----
+--- 
+type: spec
+microservice: obsidian-brain
+
 repo: fundamental-analysis
 feature_id: FEAT-002
 status: draft

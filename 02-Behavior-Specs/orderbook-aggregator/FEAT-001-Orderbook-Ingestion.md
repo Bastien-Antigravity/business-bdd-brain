@@ -1,3 +1,9 @@
+---
+microservice: obsidian-brain
+type: spec
+status: frozen
+---
+
 # 📝 Behavior Spec: FEAT-001 Orderbook Ingestion
 
 **Status**: Draft
@@ -30,8 +36,15 @@ To perform technical analysis, we need high-fidelity orderbook data. This featur
 **Then** the `market-observer` should attempt to reconnect using an exponential backoff
 **And** it should notify the `notif-server` if reconnection fails after 5 attempts.
 
+### Scenario 4: Silent Data Detection (Heartbeat)
+**Given** an active connection to Binance
+**When** no data packets are received for 30 seconds (stale socket)
+**Then** the `market-observer` should terminate the stale connection
+**And** it should initiate a fresh reconnection sequence.
+
 ## 🧪 Acceptance Criteria
 - [ ] Raw Binance JSON is parsed without data loss.
 - [ ] Normalization latency is < 5ms.
 - [ ] Reconnection logic triggers automatically.
+- [ ] Heartbeat timeout (30s) triggers fresh connection.
 - [ ] Data is stored in TimescaleDB with a valid `hypertable` schema.

@@ -1,4 +1,4 @@
----
+--- 
 title: "Domain Glossary"
 type: architecture
 status: active
