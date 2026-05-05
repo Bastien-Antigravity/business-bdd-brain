@@ -42,9 +42,17 @@ To perform technical analysis, we need high-fidelity orderbook data. This featur
 **Then** the `market-observer` should terminate the stale connection
 **And** it should initiate a fresh reconnection sequence.
 
+### Scenario 5: Multi-Broker Aggregation
+**Given** active streams from multiple brokers (e.g., Binance, Kraken, OKX)
+**When** the `orderbook-aggregator` receives depth updates for the same symbol (e.g., BTC/USDT)
+**Then** it should merge the bids and asks into a single "Unified Orderbook"
+**And** it should tag each price level with its source broker ID
+**And** it should sort the unified book by price (Bids descending, Asks ascending).
+
 ## 🧪 Acceptance Criteria
 - [ ] Raw Binance JSON is parsed without data loss.
 - [ ] Normalization latency is < 5ms.
 - [ ] Reconnection logic triggers automatically.
 - [ ] Heartbeat timeout (30s) triggers fresh connection.
+- [ ] Multi-broker updates are correctly merged and sorted in the unified book.
 - [ ] Data is stored in TimescaleDB with a valid `hypertable` schema.
