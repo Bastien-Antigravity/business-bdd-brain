@@ -1,3 +1,8 @@
+---
+type: legacy
+status: active
+---
+
 # 🌌 Feature: Ontime-Scheduler Migration Validation (FEAT-008)
 
 **Objective**: Validate the functional parity of the Go-based `ontime-scheduler` with the legacy Python service, ensuring reliable job scheduling and execution.

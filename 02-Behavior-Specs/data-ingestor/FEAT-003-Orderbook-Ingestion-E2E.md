@@ -53,4 +53,4 @@ type: behavior-spec
 - [ ] Data integrity check: published values match raw exchange values exactly.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-003-ingestion-e2e.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-003-ingestion-e2e.yaml]`

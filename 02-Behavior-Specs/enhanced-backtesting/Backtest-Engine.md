@@ -56,5 +56,5 @@ status: approved
 - [x] Strategy parameter injection via `DistributedConfig` working.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-BACKTEST-ENGINE.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-BACKTEST-ENGINE.yaml]`
 - **Implementation**: `enhanced-backtesting/src/backtest_engine.py`

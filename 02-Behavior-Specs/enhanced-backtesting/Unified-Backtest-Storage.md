@@ -55,5 +55,5 @@ status: approved
 - [x] JSON schema validation for backtest parameters functional.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-UNIFIED-STORAGE.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-UNIFIED-STORAGE.yaml]`
 - **Implementation**: `enhanced-backtesting/src/backtest_storage.py`

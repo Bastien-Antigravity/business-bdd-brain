@@ -1,3 +1,8 @@
+---
+type: legacy
+status: active
+---
+
 # Legacy BDD Spec: Ontime-Scheduler (Python)
 **Status**: ARCHIVED / REFERENCE
 **Context**: Original Python implementation using FastAPI and APScheduler.

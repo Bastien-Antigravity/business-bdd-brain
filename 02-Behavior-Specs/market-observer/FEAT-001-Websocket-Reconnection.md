@@ -46,4 +46,4 @@ status: draft
 - [ ] Integration with `notif-server` verified.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-001-ws-reconnect.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-001-ws-reconnect.yaml]`

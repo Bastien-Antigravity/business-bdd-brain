@@ -48,4 +48,4 @@ status: draft
 - [ ] Unit tests cover edge cases (empty arrays, malformed numbers).
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-001-mapping.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-001-mapping.yaml]`

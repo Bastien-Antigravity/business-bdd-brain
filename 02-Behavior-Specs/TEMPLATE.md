@@ -39,5 +39,5 @@ status: draft # [draft, approved, implemented, deprecated]
 - [ ] Documentation updated in README/ARCHITECTURE.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-XXX-<name>.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-XXX-<name>.yaml]`
 - **Implementation**: `sandbox-testing/implementations/<lang>/<test_file>`

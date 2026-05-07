@@ -43,4 +43,4 @@ status: draft
 - [ ] Calculation engine verified against manual Excel models.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-002-metrics.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-002-metrics.yaml]`

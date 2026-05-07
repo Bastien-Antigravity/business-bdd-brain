@@ -1,3 +1,8 @@
+---
+type: legacy
+status: active
+---
+
 # BDD Spec: Ontime-Scheduler (Go Edition)
 **Status**: DRAFT
 **Domain**: Infrastructure / Automation

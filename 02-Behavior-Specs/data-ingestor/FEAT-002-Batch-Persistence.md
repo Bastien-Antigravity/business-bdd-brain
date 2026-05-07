@@ -42,4 +42,4 @@ status: draft
 - [ ] Data verified in `hypertable` after flush.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-002-batch-persistence.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-002-batch-persistence.yaml]`

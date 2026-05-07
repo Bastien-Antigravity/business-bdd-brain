@@ -42,4 +42,4 @@ status: draft
 - [ ] Status correctly reflects internal state.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-003-heartbeat.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-003-heartbeat.yaml]`

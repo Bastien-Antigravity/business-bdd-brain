@@ -58,5 +58,5 @@ status: approved
 - [x] Unit tests for parameter scaling and regime classification pass.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-REGIME-DETECTION.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-REGIME-DETECTION.yaml]`
 - **Implementation**: `enhanced-backtesting/src/calculators/regime_detector.py`

@@ -43,4 +43,4 @@ status: draft
 - [ ] Validation logic correctly flags unbalanced statements.
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-001-scraping.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-001-scraping.yaml]`

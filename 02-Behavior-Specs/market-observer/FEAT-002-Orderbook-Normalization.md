@@ -44,4 +44,4 @@ status: draft
 - [ ] Unit tests verify numeric precision (no floating point errors).
 
 ## 🔗 Sandbox Binding
-- **Feature**: `[[sandbox-testing/features/FEAT-002-orderbook-normalization.yaml]]`
+- **Feature**: `[sandbox-testing/features/FEAT-002-orderbook-normalization.yaml]`

@@ -16,8 +16,8 @@ Brief description of the feature or epic.
 
 ### AC-01: <Criteria Title>
 - **Description**: What must be true for this criterion to pass.
-- **Behavior Specs**: [[02-Behavior-Specs/<microservice>/<spec-file>]]
-- **Sandbox Scenario**: [[sandbox-testing/scenarios/<scenario-file>]]
+- **Behavior Specs**: [02-Behavior-Specs/<microservice>/<spec-file>]
+- **Sandbox Scenario**: [sandbox-testing/scenarios/<scenario-file>]
 
 ### AC-02: <Criteria Title>
 - **Description**: ...
