@@ -1,3 +1,9 @@
+---
+microservice: business-bdd-brain
+type: governance
+status: active
+---
+
 # ⚡ AI Initialization: business-bdd-brain
 
 > [!IMPORTANT] MANDATORY INITIALIZATION
