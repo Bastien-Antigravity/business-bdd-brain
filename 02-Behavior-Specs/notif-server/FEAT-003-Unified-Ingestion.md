@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: notif-server
 feature_id: FEAT-003
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: Unified Ingestion (TCP & gRPC)

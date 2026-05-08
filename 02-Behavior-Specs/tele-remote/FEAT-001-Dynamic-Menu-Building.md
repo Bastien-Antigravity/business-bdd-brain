@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: tele-remote
 feature_id: FEAT-001
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: Dynamic Menu Building (Menu-on-the-fly)

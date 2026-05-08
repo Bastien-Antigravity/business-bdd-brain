@@ -1,11 +1,13 @@
---- 
-title: "Domain Glossary"
+---
+title: Domain Glossary
 type: architecture
 status: active
 microservice: ecosystem-wide
 tags:
-  - domain/ddd
-  - type/reference
+- type/reference
+- domain/ddd
+- '#state/active'
+- '#type/architecture'
 ---
 
 # 📘 Domain Glossary (Ubiquitous Language)

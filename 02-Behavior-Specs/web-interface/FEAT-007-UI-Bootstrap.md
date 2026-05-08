@@ -3,6 +3,10 @@ feature_id: FEAT-007
 status: active
 type: behavior-spec
 repo: web-interface
+tags:
+- '#type/behavior-spec'
+- null
+- '#state/active'
 ---
 
 # Feature: Web Interface Bootstrap

@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: universal-logger
 feature_id: FEAT-001
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: Unified Bootstrap Orchestration

@@ -1,10 +1,14 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
-repo: [repo-name]
+repo:
+- repo-name
 feature_id: FEAT-XXX
-status: draft # [draft, approved, implemented, deprecated]
+status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: [Feature Name]

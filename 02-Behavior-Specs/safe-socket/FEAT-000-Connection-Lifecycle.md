@@ -1,12 +1,14 @@
---- 
-title: "SafeSocket Connection Lifecycle"
+---
+title: SafeSocket Connection Lifecycle
 type: behavior-spec
 status: active
 microservice: safe-socket
 priority: high
 tags:
-  - domain/networking
-  - type/behavior-spec
+- '#type/behavior-spec'
+- type/behavior-spec
+- domain/networking
+- '#state/active'
 ---
 
 # Feature: SafeSocket Connection Lifecycle

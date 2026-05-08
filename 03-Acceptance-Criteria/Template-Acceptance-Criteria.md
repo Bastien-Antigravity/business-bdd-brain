@@ -1,10 +1,12 @@
---- 
-title: "Acceptance Criteria Template"
+---
+title: Acceptance Criteria Template
 type: acceptance-criteria
 status: template
 microservice: <target-microservice>
 tags:
-  - type/acceptance-criteria
+- type/acceptance-criteria
+- '#type/acceptance-criteria'
+- '#state/template'
 ---
 
 # Acceptance Criteria: <Feature Name>

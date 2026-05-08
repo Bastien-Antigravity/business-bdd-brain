@@ -2,6 +2,10 @@
 microservice: obsidian-brain
 type: spec
 status: frozen
+tags:
+- '#state/frozen'
+- null
+- '#type/spec'
 ---
 
 # 📝 Behavior Spec: FEAT-001 Orderbook Ingestion

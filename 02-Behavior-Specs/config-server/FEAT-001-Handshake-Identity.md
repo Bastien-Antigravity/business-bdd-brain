@@ -1,9 +1,13 @@
---- 
+---
 repo: config-server
 microservice: config-server
 type: behavior-spec
 status: active
 feature_id: FEAT-001
+tags:
+- '#type/behavior-spec'
+- null
+- '#state/active'
 ---
 # FEAT-001: Mutual Identity Handshake
 

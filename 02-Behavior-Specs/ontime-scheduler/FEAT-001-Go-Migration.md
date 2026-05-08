@@ -1,6 +1,10 @@
 ---
 type: legacy
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/legacy'
 ---
 
 # BDD Spec: Ontime-Scheduler (Go Edition)

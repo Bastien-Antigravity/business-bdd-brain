@@ -2,6 +2,10 @@
 microservice: behavior-specs-moc
 type: moc
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/moc'
 ---
 
 # Behavior Specs MOC

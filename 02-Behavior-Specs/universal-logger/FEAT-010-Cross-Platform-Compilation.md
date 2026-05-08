@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: universal-logger
 feature_id: FEAT-010
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: Cross-Platform Compilation (C-Archive)

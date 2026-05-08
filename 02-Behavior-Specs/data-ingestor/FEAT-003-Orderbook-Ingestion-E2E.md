@@ -3,6 +3,10 @@ repo: data-ingestor
 feature_id: FEAT-003
 status: draft
 type: behavior-spec
+tags:
+- '#state/draft'
+- '#type/behavior-spec'
+- null
 ---
 
 # Feature: End-to-End Orderbook Ingestion

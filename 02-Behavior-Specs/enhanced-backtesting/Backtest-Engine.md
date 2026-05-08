@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: enhanced-backtesting
 feature_id: FEAT-BACKTEST-ENGINE
 status: approved
+tags:
+- '#state/approved'
+- null
+- '#type/spec'
 ---
 
 # Feature: High-Fidelity Backtesting Engine

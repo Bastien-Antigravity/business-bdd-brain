@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: enhanced-backtesting
 feature_id: FEAT-REGIME-DETECTION
 status: approved
+tags:
+- '#state/approved'
+- null
+- '#type/spec'
 ---
 
 # Feature: Market Regime Detection

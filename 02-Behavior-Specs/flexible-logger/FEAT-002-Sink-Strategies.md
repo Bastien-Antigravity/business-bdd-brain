@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: flexible-logger
 feature_id: FEAT-002
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # Feature: Sink Strategies (Best-Effort vs. Audit-Secure)

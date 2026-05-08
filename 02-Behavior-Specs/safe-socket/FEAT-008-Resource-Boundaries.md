@@ -1,10 +1,13 @@
---- 
+---
 type: spec
 microservice: obsidian-brain
-
 repo: safe-socket
 feature_id: FEAT-008
 status: active
+tags:
+- '#state/active'
+- null
+- '#type/spec'
 ---
 
 # Feature: Resource Boundaries & Hardening

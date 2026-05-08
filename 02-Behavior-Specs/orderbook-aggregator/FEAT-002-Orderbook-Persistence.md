@@ -2,6 +2,10 @@
 microservice: obsidian-brain
 type: spec
 status: draft
+tags:
+- '#state/draft'
+- null
+- '#type/spec'
 ---
 
 # 📝 Behavior Spec: FEAT-002 Orderbook Persistence

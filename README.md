@@ -1,11 +1,13 @@
---- 
+---
 microservice: 02-Business-BDD
 type: repository
 status: active
 tags:
-  - domain/bdd
-  - domain/testing
-  - type/architecture
+- '#type/repository'
+- domain/testing
+- '#state/active'
+- type/architecture
+- domain/bdd
 ---
 
 # 🧪 Business BDD Brain
