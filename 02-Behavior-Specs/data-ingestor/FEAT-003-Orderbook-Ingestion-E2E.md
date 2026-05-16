@@ -4,9 +4,11 @@ feature_id: FEAT-003
 status: draft
 type: behavior-spec
 tags:
+- \'#service/business-bdd-brain\'
 - '#state/draft'
 - '#type/behavior-spec'
 - null
+microservice: business-bdd-brain
 ---
 
 # Feature: End-to-End Orderbook Ingestion
