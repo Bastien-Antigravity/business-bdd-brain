@@ -5,6 +5,7 @@ repo: safe-socket
 feature_id: FEAT-008
 status: active
 tags:
+- \'#service/obsidian-brain\'
 - '#state/active'
 - null
 - '#type/spec'

@@ -5,6 +5,7 @@ repo: data-ingestor
 feature_id: FEAT-002
 status: draft
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - null
 - '#type/spec'

@@ -5,6 +5,7 @@ repo: enhanced-backtesting
 feature_id: FEAT-UNIFIED-STORAGE
 status: approved
 tags:
+- \'#service/obsidian-brain\'
 - '#state/approved'
 - null
 - '#type/spec'

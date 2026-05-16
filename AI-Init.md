@@ -3,6 +3,7 @@ microservice: business-bdd-brain
 type: governance
 status: active
 tags:
+- \'#service/business-bdd-brain\'
 - '#type/governance'
 - null
 - '#state/active'

@@ -5,9 +5,10 @@ status: active
 microservice: safe-socket
 priority: high
 tags:
+- \'#service/safe-socket\'
 - '#type/behavior-spec'
 - type/behavior-spec
-- domain/networking
+- '#domain/networking'
 - '#state/active'
 ---
 

@@ -3,6 +3,7 @@ microservice: behavior-specs-moc
 type: moc
 status: active
 tags:
+- \'#service/behavior-specs-moc\'
 - '#state/active'
 - null
 - '#type/moc'

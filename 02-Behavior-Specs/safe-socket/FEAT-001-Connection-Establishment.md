@@ -5,6 +5,7 @@ repo: safe-socket
 feature_id: FEAT-001
 status: draft
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - null
 - '#type/spec'

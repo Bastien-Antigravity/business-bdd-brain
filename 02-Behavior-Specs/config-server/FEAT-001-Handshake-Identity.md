@@ -5,6 +5,7 @@ type: behavior-spec
 status: active
 feature_id: FEAT-001
 tags:
+- \'#service/config-server\'
 - '#type/behavior-spec'
 - null
 - '#state/active'

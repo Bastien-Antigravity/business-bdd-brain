@@ -5,6 +5,7 @@ repo: distributed-config
 feature_id: FEAT-009
 status: draft
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - null
 - '#type/spec'

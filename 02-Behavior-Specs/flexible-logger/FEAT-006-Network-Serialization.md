@@ -5,6 +5,7 @@ repo: flexible-logger
 feature_id: FEAT-006
 status: draft
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - null
 - '#type/spec'

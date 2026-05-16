@@ -4,8 +4,9 @@ type: architecture
 status: active
 microservice: ecosystem-wide
 tags:
+- \'#service/ecosystem-wide\'
 - type/reference
-- domain/ddd
+- '#domain/ddd'
 - '#state/active'
 - '#type/architecture'
 ---

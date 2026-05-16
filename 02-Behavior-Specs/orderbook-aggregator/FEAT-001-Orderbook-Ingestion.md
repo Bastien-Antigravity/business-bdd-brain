@@ -3,6 +3,7 @@ microservice: obsidian-brain
 type: spec
 status: frozen
 tags:
+- \'#service/obsidian-brain\'
 - '#state/frozen'
 - null
 - '#type/spec'

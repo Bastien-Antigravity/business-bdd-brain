@@ -5,6 +5,7 @@ repo: log-server
 feature_id: FEAT-003
 status: active
 tags:
+- \'#service/obsidian-brain\'
 - '#state/active'
 - null
 - '#type/spec'

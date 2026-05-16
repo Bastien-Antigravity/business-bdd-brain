@@ -5,6 +5,7 @@ repo: notif-server
 feature_id: FEAT-003
 status: draft
 tags:
+- \'#service/obsidian-brain\'
 - '#state/draft'
 - null
 - '#type/spec'

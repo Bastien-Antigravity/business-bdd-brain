@@ -4,6 +4,7 @@ type: acceptance-criteria
 status: template
 microservice: <target-microservice>
 tags:
+- \'#service/<target-microservice>\'
 - type/acceptance-criteria
 - '#type/acceptance-criteria'
 - '#state/template'

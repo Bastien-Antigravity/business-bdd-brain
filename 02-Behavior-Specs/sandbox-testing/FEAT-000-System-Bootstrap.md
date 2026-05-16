@@ -4,6 +4,7 @@ type: behavior-spec
 status: active
 microservice: sandbox-testing
 tags:
+- \'#service/sandbox-testing\'
 - '#type/behavior-spec'
 - null
 - '#state/active'
