@@ -1,5 +1,4 @@
 ---
-
 microservice: behavior-specs-moc
 type: moc
 status: active

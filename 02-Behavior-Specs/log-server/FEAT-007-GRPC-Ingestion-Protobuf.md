@@ -1,5 +1,4 @@
 ---
-
 type: spec
 microservice: business-bdd-brain
 repo: log-server

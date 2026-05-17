@@ -1,5 +1,4 @@
 ---
-
 microservice: business-bdd-brain
 type: architecture
 status: active

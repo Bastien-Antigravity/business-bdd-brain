@@ -1,5 +1,4 @@
 ---
-
 repo: data-ingestor
 feature_id: FEAT-003
 status: draft

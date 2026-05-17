@@ -1,5 +1,4 @@
 ---
-
 repo: config-server
 microservice: business-bdd-brain
 type: behavior-spec

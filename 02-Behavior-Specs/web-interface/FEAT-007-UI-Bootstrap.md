@@ -1,5 +1,4 @@
 ---
-
 feature_id: FEAT-007
 status: active
 type: behavior-spec
