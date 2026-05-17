@@ -1,16 +1,16 @@
 ---
+
 feature_id: FEAT-007
 status: active
 type: behavior-spec
 repo: web-interface
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#type/behavior-spec'
 - '#state/active'
 microservice: business-bdd-brain
 ---
-
 # Feature: Web Interface Bootstrap
 
 As a user of the Bastien-Antigravity ecosystem, I want the web interface to bootstrap reliably and connect to core services so that I can monitor the fleet status.

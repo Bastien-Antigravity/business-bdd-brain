@@ -1,16 +1,16 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo: enhanced-backtesting
 feature_id: FEAT-REGIME-DETECTION
 status: approved
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/approved'
 - '#type/spec'
 ---
-
 # Feature: Market Regime Detection
 
 ## 🎯 Business Intent

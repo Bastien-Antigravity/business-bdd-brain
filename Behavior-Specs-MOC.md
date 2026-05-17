@@ -1,14 +1,14 @@
 ---
+
 microservice: behavior-specs-moc
 type: moc
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/behavior-specs-moc'
 - '#state/active'
 - '#type/moc'
 ---
-
 # Behavior Specs MOC
 
 This index auto-aggregates previously orphaned files.

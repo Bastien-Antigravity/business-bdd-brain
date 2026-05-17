@@ -1,16 +1,16 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo: tele-remote
 feature_id: FEAT-003
 status: draft
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'
 ---
-
 # Feature: Bidirectional Command Routing
 
 ## 🎯 Business Intent

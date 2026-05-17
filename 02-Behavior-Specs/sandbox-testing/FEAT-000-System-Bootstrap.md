@@ -1,11 +1,12 @@
 ---
+
 feature_id: FEAT-000
 type: behavior-spec
 status: active
 microservice: business-bdd-brain
 tags:
-- \'#zone/3-fleet\'
-- \'#service/business-bdd-brain\'
+- '#zone/3-fleet'
+- '#service/business-bdd-brain'
 - '#service/sandbox-testing'
 - '#type/behavior-spec'
 - '#state/active'

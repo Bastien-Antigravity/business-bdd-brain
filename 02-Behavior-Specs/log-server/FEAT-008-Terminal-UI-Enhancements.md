@@ -1,16 +1,16 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo: log-server
 feature_id: FEAT-008
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/spec'
 ---
-
 # Feature: Terminal UI & Level Colorization
 
 ## 🎯 Business Intent

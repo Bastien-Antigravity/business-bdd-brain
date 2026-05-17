@@ -1,4 +1,5 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo:
@@ -6,12 +7,11 @@ repo:
 feature_id: FEAT-XXX
 status: draft
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'
 ---
-
 # Feature: [Feature Name]
 
 ## 🎯 Business Intent

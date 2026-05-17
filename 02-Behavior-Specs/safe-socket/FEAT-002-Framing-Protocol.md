@@ -1,16 +1,16 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo: safe-socket
 feature_id: FEAT-002
 status: draft
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'
 ---
-
 # Feature: 4-Byte Header Framing
 
 ## 🎯 Business Intent

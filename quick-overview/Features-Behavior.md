@@ -1,13 +1,13 @@
 ---
+
 microservice: business-bdd-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/business-bdd-brain'
 ---
-
 # Features & Behavior
 
 This repository organizes behavioral expectations by microservice domain.

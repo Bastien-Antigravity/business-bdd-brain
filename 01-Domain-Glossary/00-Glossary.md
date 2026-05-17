@@ -1,17 +1,17 @@
 ---
+
 title: Domain Glossary
 type: architecture
 status: active
 microservice: ecosystem-wide
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/ecosystem-wide'
 - '#type/reference'
 - '#domain/ddd'
 - '#state/active'
 - '#type/architecture'
 ---
-
 # 📘 Domain Glossary (Ubiquitous Language)
 
 This glossary defines the shared terminology used across all Behavior-Driven Development specifications. Using consistent language ensures that specs, tests, and code all refer to the same concepts.

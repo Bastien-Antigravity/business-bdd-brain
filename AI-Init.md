@@ -1,14 +1,14 @@
 ---
+
 microservice: business-bdd-brain
 type: governance
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#type/governance'
 - '#state/active'
 ---
-
 # ⚡ AI Initialization: business-bdd-brain
 
 > [!IMPORTANT] MANDATORY INITIALIZATION

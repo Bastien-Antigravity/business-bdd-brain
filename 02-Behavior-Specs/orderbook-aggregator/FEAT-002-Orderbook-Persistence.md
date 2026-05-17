@@ -1,14 +1,14 @@
 ---
+
 microservice: business-bdd-brain
 type: spec
 status: draft
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'
 ---
-
 # 📝 Behavior Spec: FEAT-002 Orderbook Persistence
 
 **Status**: Draft

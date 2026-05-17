@@ -1,14 +1,14 @@
 ---
+
 type: legacy
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/legacy'
 microservice: business-bdd-brain
 ---
-
 # BDD Spec: Ontime-Scheduler (Go Edition)
 **Status**: DRAFT
 **Domain**: Infrastructure / Automation

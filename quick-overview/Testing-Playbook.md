@@ -1,13 +1,13 @@
 ---
+
 microservice: business-bdd-brain
 type: architecture
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#ai/ignore'
 - '#service/business-bdd-brain'
 ---
-
 # Testing Playbook
 
 The testing lifecycle for the Bastien-Antigravity fleet starts here.

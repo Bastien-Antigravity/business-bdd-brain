@@ -1,14 +1,14 @@
 ---
+
 type: legacy
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/legacy'
 microservice: business-bdd-brain
 ---
-
 # Legacy BDD Spec: Ontime-Scheduler (Python)
 **Status**: ARCHIVED / REFERENCE
 **Context**: Original Python implementation using FastAPI and APScheduler.

@@ -1,16 +1,16 @@
 ---
+
 type: spec
 microservice: business-bdd-brain
 repo: safe-socket
 feature_id: FEAT-008
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/spec'
 ---
-
 # Feature: Resource Boundaries & Hardening
 
 ## 🎯 Business Intent

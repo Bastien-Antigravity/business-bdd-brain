@@ -1,14 +1,14 @@
 ---
+
 type: legacy
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/legacy'
 microservice: business-bdd-brain
 ---
-
 # 🌌 Feature: Ontime-Scheduler Migration Validation (FEAT-008)
 
 **Objective**: Validate the functional parity of the Go-based `ontime-scheduler` with the legacy Python service, ensuring reliable job scheduling and execution.

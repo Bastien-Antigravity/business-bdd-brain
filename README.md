@@ -1,9 +1,10 @@
 ---
+
 microservice: 02-Business-BDD
 type: repository
 status: active
 tags:
-- \'#zone/3-fleet\'
+- '#zone/3-fleet'
 - '#service/02-Business-BDD'
 - '#type/repository'
 - '#domain/testing'
@@ -11,7 +12,6 @@ tags:
 - '#type/architecture'
 - '#domain/bdd'
 ---
-
 # 🧪 Business BDD Brain
 
 Welcome to the **Business BDD Brain**. This repository is **Tier 3** of the 4-Tier AI-KMS Architecture.
