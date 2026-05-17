@@ -5,6 +5,7 @@ repo: universal-logger
 feature_id: FEAT-011
 status: draft
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'

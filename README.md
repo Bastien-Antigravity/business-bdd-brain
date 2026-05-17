@@ -3,6 +3,7 @@ microservice: 02-Business-BDD
 type: repository
 status: active
 tags:
+- \'#zone/3-fleet\'
 - '#service/02-Business-BDD'
 - '#type/repository'
 - '#domain/testing'

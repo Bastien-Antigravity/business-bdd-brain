@@ -3,6 +3,7 @@ microservice: business-bdd-brain
 type: spec
 status: frozen
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/frozen'
 - '#type/spec'

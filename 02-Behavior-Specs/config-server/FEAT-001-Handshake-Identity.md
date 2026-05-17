@@ -5,6 +5,7 @@ type: behavior-spec
 status: active
 feature_id: FEAT-001
 tags:
+- \'#zone/3-fleet\'
 - \'#service/business-bdd-brain\'
 - '#service/config-server'
 - '#type/behavior-spec'

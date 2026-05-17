@@ -4,6 +4,7 @@ feature_id: FEAT-003
 status: draft
 type: behavior-spec
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/behavior-spec'

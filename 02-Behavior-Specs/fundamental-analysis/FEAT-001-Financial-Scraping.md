@@ -5,6 +5,7 @@ repo: fundamental-analysis
 feature_id: FEAT-001
 status: draft
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'

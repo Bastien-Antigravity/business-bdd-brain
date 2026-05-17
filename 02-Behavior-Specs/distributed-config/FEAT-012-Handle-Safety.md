@@ -5,6 +5,7 @@ repo: distributed-config
 feature_id: FEAT-012
 status: draft
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'

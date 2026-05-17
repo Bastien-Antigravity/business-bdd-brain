@@ -4,6 +4,7 @@ status: active
 type: behavior-spec
 repo: web-interface
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#type/behavior-spec'
 - '#state/active'

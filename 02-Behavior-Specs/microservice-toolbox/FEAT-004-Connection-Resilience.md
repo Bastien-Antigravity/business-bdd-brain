@@ -5,6 +5,7 @@ repo: microservice-toolbox
 feature_id: FEAT-004
 status: draft
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/draft'
 - '#type/spec'

@@ -5,6 +5,7 @@ repo: enhanced-backtesting
 feature_id: FEAT-REGIME-DETECTION
 status: approved
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/approved'
 - '#type/spec'

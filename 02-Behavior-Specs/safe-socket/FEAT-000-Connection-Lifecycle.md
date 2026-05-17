@@ -5,6 +5,7 @@ status: active
 microservice: business-bdd-brain
 priority: high
 tags:
+- \'#zone/3-fleet\'
 - \'#service/business-bdd-brain\'
 - '#service/safe-socket'
 - '#type/behavior-spec'

@@ -5,6 +5,7 @@ repo: log-server
 feature_id: FEAT-008
 status: active
 tags:
+- \'#zone/3-fleet\'
 - '#service/business-bdd-brain'
 - '#state/active'
 - '#type/spec'
