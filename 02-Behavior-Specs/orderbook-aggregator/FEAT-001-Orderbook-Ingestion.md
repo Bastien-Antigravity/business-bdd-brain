@@ -1,11 +1,10 @@
 ---
-microservice: obsidian-brain
+microservice: business-bdd-brain
 type: spec
 status: frozen
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/frozen'
-- null
 - '#type/spec'
 ---
 

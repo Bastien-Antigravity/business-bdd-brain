@@ -1,11 +1,10 @@
 ---
-microservice: obsidian-brain
+microservice: business-bdd-brain
 type: spec
 status: draft
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/draft'
-- null
 - '#type/spec'
 ---
 

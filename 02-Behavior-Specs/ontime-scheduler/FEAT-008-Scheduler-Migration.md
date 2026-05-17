@@ -2,9 +2,8 @@
 type: legacy
 status: active
 tags:
-- \'#service/business-bdd-brain\'
+- '#service/business-bdd-brain'
 - '#state/active'
-- null
 - '#type/legacy'
 microservice: business-bdd-brain
 ---

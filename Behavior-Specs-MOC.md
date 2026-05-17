@@ -3,9 +3,8 @@ microservice: behavior-specs-moc
 type: moc
 status: active
 tags:
-- \'#service/behavior-specs-moc\'
+- '#service/behavior-specs-moc'
 - '#state/active'
-- null
 - '#type/moc'
 ---
 
@@ -13,6 +12,8 @@ tags:
 
 This index auto-aggregates previously orphaned files.
 
+- [[Backtest-Engine]]
+- [[FEAT-000-Connection-Lifecycle]]
 - [[FEAT-000-System-Bootstrap]]
 - [[FEAT-001-Configuration-Discovery]]
 - [[FEAT-001-Connection-Establishment]]
@@ -23,6 +24,7 @@ This index auto-aggregates previously orphaned files.
 - [[FEAT-001-Go-Migration]]
 - [[FEAT-001-Handshake-Identity]]
 - [[FEAT-001-Log-Levels-Filtering]]
+- [[FEAT-001-Orderbook-Ingestion]]
 - [[FEAT-001-TCP-Ingestion-Capnp]]
 - [[FEAT-001-Tag-Based-Routing]]
 - [[FEAT-001-Unified-Bootstrap]]
@@ -69,8 +71,10 @@ This index auto-aggregates previously orphaned files.
 - [[FEAT-006-Handshake-Identity]]
 - [[FEAT-006-Network-Serialization]]
 - [[FEAT-006-Secret-Decryption]]
+- [[FEAT-007-CGO-FFI-Bridge]]
 - [[FEAT-007-GRPC-Ingestion-Protobuf]]
 - [[FEAT-007-Reconnection-Strategy]]
+- [[FEAT-007-UI-Bootstrap]]
 - [[FEAT-008-Resilience-Backoff]]
 - [[FEAT-008-Resource-Boundaries]]
 - [[FEAT-008-Scheduler-Migration]]
@@ -84,3 +88,6 @@ This index auto-aggregates previously orphaned files.
 - [[FEAT-011-Memory-Space-Unification]]
 - [[FEAT-012-Handle-Safety]]
 - [[FEAT-012-VBA-Message-Loop-Hook]]
+- [[LEGACY-Python-Behavior]]
+- [[Regime-Detection]]
+- [[Unified-Backtest-Storage]]

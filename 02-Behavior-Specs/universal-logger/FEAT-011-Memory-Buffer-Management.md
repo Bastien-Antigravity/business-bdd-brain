@@ -1,13 +1,12 @@
 ---
 type: spec
-microservice: obsidian-brain
+microservice: business-bdd-brain
 repo: universal-logger
 feature_id: FEAT-011
 status: draft
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/draft'
-- null
 - '#type/spec'
 ---
 

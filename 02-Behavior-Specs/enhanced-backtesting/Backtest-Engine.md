@@ -1,13 +1,12 @@
 ---
 type: spec
-microservice: obsidian-brain
+microservice: business-bdd-brain
 repo: enhanced-backtesting
 feature_id: FEAT-BACKTEST-ENGINE
 status: approved
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/approved'
-- null
 - '#type/spec'
 ---
 

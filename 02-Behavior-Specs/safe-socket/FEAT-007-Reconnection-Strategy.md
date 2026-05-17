@@ -1,13 +1,12 @@
 ---
 type: spec
-microservice: obsidian-brain
+microservice: business-bdd-brain
 repo: safe-socket
 feature_id: FEAT-007
 status: active
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/active'
-- null
 - '#type/spec'
 ---
 

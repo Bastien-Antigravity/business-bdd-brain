@@ -4,8 +4,8 @@ type: architecture
 status: active
 microservice: ecosystem-wide
 tags:
-- \'#service/ecosystem-wide\'
-- type/reference
+- '#service/ecosystem-wide'
+- '#type/reference'
 - '#domain/ddd'
 - '#state/active'
 - '#type/architecture'
@@ -26,6 +26,10 @@ This glossary defines the shared terminology used across all Behavior-Driven Dev
 | **Flexible Logger** | The client-side logging facade that abstracts concrete logging implementations. |
 | **Universal Logger** | The ecosystem-wide logging interface standard that all services implement. |
 | **Distributed Config** | The configuration library providing environment-first bootstrapping with file resolution. |
+| **FFI (Foreign Function Interface)** | The mechanism used to call Go or Rust logic from other languages (VBA, C++, Python). |
+| **CGO** | The Go toolchain extension for calling C code, used in the FFI bridge for distributed config. |
+| **Cap'n Proto** | A zero-copy serialization protocol used for high-performance logging ingestion. |
+| **Gherkin** | The business-readable language (Given/When/Then) used to define BDD scenarios. |
 
 ## Services
 
@@ -44,3 +48,12 @@ This glossary defines the shared terminology used across all Behavior-Driven Dev
 | **Scenario** | A single test case within a behavior spec, describing one specific interaction flow. |
 | **Acceptance Criteria** | High-level requirements that a feature must satisfy to be considered complete. |
 | **Edge Case** | A boundary or failure condition that must be explicitly tested. |
+| **Sentinel Audit** | A compliance check performed by the AI to ensure repository integrity. |
+
+## Trading Domains
+
+| Term | Definition |
+|------|-----------|
+| **Orderbook Normalization** | The process of converting exchange-specific orderbook formats into a unified internal schema. |
+| **Regime Detection** | Algorithmic identification of current market states (e.g., trending, range-bound, high-volatility). |
+| **Backtest Engine** | The simulation environment for validating trading strategies against historical data. |

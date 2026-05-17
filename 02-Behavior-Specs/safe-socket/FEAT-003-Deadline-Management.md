@@ -1,13 +1,12 @@
 ---
 type: spec
-microservice: obsidian-brain
+microservice: business-bdd-brain
 repo: safe-socket
 feature_id: FEAT-003
 status: draft
 tags:
-- \'#service/obsidian-brain\'
+- '#service/business-bdd-brain'
 - '#state/draft'
-- null
 - '#type/spec'
 ---
 

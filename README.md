@@ -3,11 +3,11 @@ microservice: 02-Business-BDD
 type: repository
 status: active
 tags:
-- \'#service/02-Business-BDD\'
+- '#service/02-Business-BDD'
 - '#type/repository'
 - '#domain/testing'
 - '#state/active'
-- type/architecture
+- '#type/architecture'
 - '#domain/bdd'
 ---
 
@@ -23,6 +23,12 @@ This brain is **100% Stateless** and contains no executable code. It stores pure
 
 1. **AI QA Agent** (`07-Core-KMS/Role-Prompts/04-QA/`): Reads the behavior specs to generate executable test skeletons.
 2. **Sandbox Testing** (`sandbox-testing/`): Executes the generated tests against real infrastructure (Native or Docker mode).
+
+### 📈 Status Lifecycle
+- **`draft`**: Spec is under development and not yet ready for QA generation.
+- **`active`**: Spec is finalized and ready for automated test execution.
+- **`approved`**: Spec has been peer-reviewed and verified against architectural standards.
+- **`frozen`**: Spec is locked for historical reference or stable production baseline.
 
 ## 📦 What's Inside?
 

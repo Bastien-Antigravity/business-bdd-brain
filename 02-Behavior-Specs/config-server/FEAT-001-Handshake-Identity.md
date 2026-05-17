@@ -1,13 +1,13 @@
 ---
 repo: config-server
-microservice: config-server
+microservice: business-bdd-brain
 type: behavior-spec
 status: active
 feature_id: FEAT-001
 tags:
-- \'#service/config-server\'
+- \'#service/business-bdd-brain\'
+- '#service/config-server'
 - '#type/behavior-spec'
-- null
 - '#state/active'
 ---
 # FEAT-001: Mutual Identity Handshake
