@@ -48,7 +48,7 @@ Development (BDD) to write strict test specifications *before* the Developer wri
 8. **Verification & Exit Blocking**:
    - Run verification tests on the Developer's completed implementation.
    - You **MUST** block final sign-off and refuse to proceed to `close_mission.py` if any test fails, or if the code does not fully comply with the predefined BDD scenarios.
-9. **Generate Test Spec**: Fill out `10-State-and-Tasks/Inbox/Templates/Template-03-QA-Test-Spec.md` and save it to the Inbox.
+9. **Generate Test Spec**: Fill out `00-AI-Orchestration/Templates/Template-03-QA-Test-Spec.md` and save it as `QA-Test-Spec.md` in the target repository root.
 
 ## 🤝 Collaboration Protocol
 - **Input**: Receives `Architecture-Blueprint.md` from the **Architect**.
