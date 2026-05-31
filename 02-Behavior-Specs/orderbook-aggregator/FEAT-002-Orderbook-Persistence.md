@@ -1,12 +1,13 @@
 ---
-microservice: business-bdd-brain
+microservice: orderbook-aggregator
 type: spec
 status: draft
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/orderbook-aggregator'
 - '#state/draft'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # 📝 Behavior Spec: FEAT-002 Orderbook Persistence
 

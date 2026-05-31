@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: universal-logger
 repo: universal-logger
 feature_id: FEAT-011
 status: draft
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/universal-logger'
 - '#state/draft'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: FFI Memory & Buffer Management
 

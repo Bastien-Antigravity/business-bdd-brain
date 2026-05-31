@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: notif-server
 repo: notif-server
 feature_id: FEAT-001
 status: draft
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/notif-server'
 - '#state/draft'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: Tag-Based Alert Routing
 

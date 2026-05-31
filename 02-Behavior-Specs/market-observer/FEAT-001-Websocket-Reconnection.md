@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: market-observer
 repo: market-observer
 feature_id: FEAT-001
 status: draft
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/market-observer'
 - '#state/draft'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: Websocket Reconnection Logic
 

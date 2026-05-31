@@ -1,14 +1,12 @@
 ---
-repo: data-ingestor
-feature_id: FEAT-003
-status: draft
-type: behavior-spec
+microservice: data-ingestor
+type: spec
+status: frozen
 tags:
+- '#service/data-ingestor'
+- '#type/spec'
+- '#state/frozen'
 - '#zone/3-fleet'
-- '#service/business-bdd-brain'
-- '#state/draft'
-- '#type/behavior-spec'
-microservice: business-bdd-brain
 ---
 # Feature: End-to-End Orderbook Ingestion
 

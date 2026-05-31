@@ -2,15 +2,15 @@
 title: SafeSocket Connection Lifecycle
 type: behavior-spec
 status: active
-microservice: business-bdd-brain
+microservice: safe-socket
 priority: high
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
-- '#service/safe-socket'
-- '#type/behavior-spec'
 - '#domain/networking'
+- '#service/safe-socket'
 - '#state/active'
+- '#tier/behavior'
+- '#type/behavior-spec'
+- '#zone/1-frozen'
 ---
 # Feature: SafeSocket Connection Lifecycle
 

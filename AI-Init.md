@@ -3,7 +3,7 @@ microservice: business-bdd-brain
 type: governance
 status: active
 tags:
-- '#zone/3-fleet'
+- '#zone/1-frozen'
 - '#service/business-bdd-brain'
 - '#type/governance'
 - '#state/active'
@@ -17,5 +17,4 @@ tags:
 > "2. Load project constraints from **[[AI-Project-DNA]]**."
 > "3. Restore session state from **[[AI-Session-State]]**."
 > "4. **Sentinel Audit**: Run `python 07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."
-> "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `03-Tech-Stack/Role-Prompts/03-Developer/Squad/`."
-
+> "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `07-Core-KMS/Role-Prompts/`."

@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: distributed-config
 repo: distributed-config
 feature_id: FEAT-008
 status: draft
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/distributed-config'
 - '#state/draft'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: Resilience & Exponential Backoff
 

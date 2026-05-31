@@ -1,13 +1,16 @@
 ---
+title: Features & Behavior - Business-BDD
 microservice: business-bdd-brain
-type: architecture
+type: human-doc
 status: active
 tags:
-- '#zone/3-fleet'
-- '#ai/ignore'
+- '#zone/1-frozen'
 - '#service/business-bdd-brain'
+- '#ai/ignore'
+- '#state/active'
+- '#type/human-doc'
 ---
-# Features & Behavior
+# 🎭 Features & Behavior
 
 This repository organizes behavioral expectations by microservice domain.
 

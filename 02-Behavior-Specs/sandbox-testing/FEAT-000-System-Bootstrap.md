@@ -2,13 +2,13 @@
 feature_id: FEAT-000
 type: behavior-spec
 status: active
-microservice: business-bdd-brain
+microservice: sandbox-testing
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
 - '#service/sandbox-testing'
-- '#type/behavior-spec'
 - '#state/active'
+- '#tier/behavior'
+- '#type/behavior-spec'
+- '#zone/1-frozen'
 ---
 # FEAT-000: System Bootstrap & Heartbeat
 

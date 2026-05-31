@@ -1,13 +1,16 @@
 ---
+title: Architecture Overview - Business-BDD
 microservice: business-bdd-brain
 type: architecture
 status: active
 tags:
-- '#zone/3-fleet'
-- '#ai/ignore'
+- '#zone/1-frozen'
 - '#service/business-bdd-brain'
+- '#ai/ignore'
+- '#state/active'
+- '#type/architecture'
 ---
-# Architecture Overview
+# ⚖️ Business-BDD: Architecture Overview
 
 The **Business BDD Brain** (02-Business-BDD) serves as the source of truth for the **Behavior Specification Layer** in the Bastien-Antigravity ecosystem.
 

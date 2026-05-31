@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: log-server
 repo: log-server
 feature_id: FEAT-006
 status: active
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/log-server'
 - '#state/active'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: Handshake Identity (Layout Hack)
 

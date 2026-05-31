@@ -1,13 +1,16 @@
 ---
+title: General & Misc - Business-BDD
 microservice: business-bdd-brain
-type: architecture
+type: human-doc
 status: active
 tags:
-- '#zone/3-fleet'
-- '#ai/ignore'
+- '#zone/1-frozen'
 - '#service/business-bdd-brain'
+- '#ai/ignore'
+- '#state/active'
+- '#type/human-doc'
 ---
-# General & Misc
+# 🧠 General & Misc
 
 ## Philosophy
 - **Human Readable, AI Executable**: Specs must be clear enough for humans to understand and structured enough for AI to implement.

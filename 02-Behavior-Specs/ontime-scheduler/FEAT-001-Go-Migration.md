@@ -1,12 +1,12 @@
 ---
-type: legacy
-status: active
+microservice: ontime-scheduler
+type: spec
+status: frozen
 tags:
+- '#service/ontime-scheduler'
+- '#type/spec'
+- '#state/frozen'
 - '#zone/3-fleet'
-- '#service/business-bdd-brain'
-- '#state/active'
-- '#type/legacy'
-microservice: business-bdd-brain
 ---
 # BDD Spec: Ontime-Scheduler (Go Edition)
 **Status**: DRAFT

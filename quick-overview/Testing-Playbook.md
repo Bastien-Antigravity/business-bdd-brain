@@ -1,13 +1,16 @@
 ---
+title: Testing Playbook - Business-BDD
 microservice: business-bdd-brain
-type: architecture
+type: human-doc
 status: active
 tags:
-- '#zone/3-fleet'
-- '#ai/ignore'
+- '#zone/1-frozen'
 - '#service/business-bdd-brain'
+- '#ai/ignore'
+- '#state/active'
+- '#type/human-doc'
 ---
-# Testing Playbook
+# 🧪 Testing Playbook
 
 The testing lifecycle for the Bastien-Antigravity fleet starts here.
 

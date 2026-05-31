@@ -1,14 +1,15 @@
 ---
 type: spec
-microservice: business-bdd-brain
+microservice: safe-socket
 repo: safe-socket
 feature_id: FEAT-007
 status: active
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/safe-socket'
 - '#state/active'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # Feature: Automatic Reconnection
 

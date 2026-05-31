@@ -1,12 +1,12 @@
 ---
-type: legacy
-status: active
+microservice: ontime-scheduler
+type: spec
+status: frozen
 tags:
+- '#service/ontime-scheduler'
+- '#type/spec'
+- '#state/frozen'
 - '#zone/3-fleet'
-- '#service/business-bdd-brain'
-- '#state/active'
-- '#type/legacy'
-microservice: business-bdd-brain
 ---
 # 🌌 Feature: Ontime-Scheduler Migration Validation (FEAT-008)
 
@@ -43,3 +43,21 @@ The `ontime-scheduler` has been migrated to Go. It must support:
 **When** the user clicks the "Pause" button for a job
 **Then** the frontend should send a POST to `/pause_job/{id}`
 **And** the job should no longer be scheduled in the Go cron engine
+
+## 🧪 Scenario 5: Secure Payload Execution (RSA)
+**Given** a job is configured with an encrypted `TargetURL` like `ENC(hS1...)`
+**When** the scheduler triggers the job
+**Then** the engine should decrypt the URL using the RSA key before making the request
+**And** the plaintext URL should never be logged or persisted in the `job_logs` table
+
+## 🧪 Scenario 6: Remote Lifecycle Control (gRPC)
+**Given** the `ontime-scheduler` is running with its gRPC Control Service enabled
+**When** an external agent calls the `ListJobs` RPC
+**Then** the service should return the full list of scheduled jobs and their current status
+**And** the agent should be able to trigger an immediate execution via the `ExecuteJobNow` RPC
+
+## 🧪 Scenario 7: Misfire Prevention (Grace Time)
+**Given** a job has a `misfire_grace_time` of 10 seconds
+**When** the engine is delayed and attempts to start the job 15 seconds after its scheduled time
+**Then** the engine should skip the execution
+**And** an `ERROR` log should be recorded indicating a misfire event

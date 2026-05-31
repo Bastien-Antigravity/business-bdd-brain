@@ -1,14 +1,12 @@
 ---
-feature_id: FEAT-007
-status: active
-type: behavior-spec
-repo: web-interface
+microservice: web-interface
+type: spec
+status: frozen
 tags:
+- '#service/web-interface'
+- '#type/spec'
+- '#state/frozen'
 - '#zone/3-fleet'
-- '#service/business-bdd-brain'
-- '#type/behavior-spec'
-- '#state/active'
-microservice: business-bdd-brain
 ---
 # Feature: Web Interface Bootstrap
 

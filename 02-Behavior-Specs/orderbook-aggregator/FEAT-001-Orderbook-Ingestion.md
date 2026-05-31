@@ -1,12 +1,13 @@
 ---
-microservice: business-bdd-brain
+microservice: orderbook-aggregator
 type: spec
 status: frozen
 tags:
-- '#zone/3-fleet'
-- '#service/business-bdd-brain'
+- '#service/orderbook-aggregator'
 - '#state/frozen'
+- '#tier/behavior'
 - '#type/spec'
+- '#zone/1-frozen'
 ---
 # 📝 Behavior Spec: FEAT-001 Orderbook Ingestion
 
