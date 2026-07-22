@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: tele-remote
-repo: tele-remote
-feature_id: FEAT-003
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/tele-remote'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: Bidirectional Command Routing
 

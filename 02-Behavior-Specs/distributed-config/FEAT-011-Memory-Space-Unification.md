@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: distributed-config
-repo: distributed-config
-feature_id: FEAT-011
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/distributed-config'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: Memory Space Unification
 

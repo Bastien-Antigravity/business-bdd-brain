@@ -1,4 +1,4 @@
----
+--- 
 title: Acceptance Criteria Template
 type: acceptance-criteria
 status: template

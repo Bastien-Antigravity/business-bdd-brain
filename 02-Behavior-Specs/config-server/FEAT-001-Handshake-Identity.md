@@ -1,15 +1,12 @@
 ---
-repo: config-server
-microservice: config-server
-type: behavior-spec
+microservice: 08-Base-Scripts
+type: note
 status: active
-feature_id: FEAT-001
 tags:
-- '#service/config-server'
+- '#service/08-Base-Scripts'
+- '#type/note'
 - '#state/active'
-- '#tier/behavior'
-- '#type/behavior-spec'
-- '#zone/1-frozen'
+- '#zone/3-fleet'
 ---
 # FEAT-001: Mutual Identity Handshake
 

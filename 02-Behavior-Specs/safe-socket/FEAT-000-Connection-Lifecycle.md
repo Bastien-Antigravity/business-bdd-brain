@@ -1,16 +1,12 @@
 ---
-title: SafeSocket Connection Lifecycle
-type: behavior-spec
+microservice: 08-Base-Scripts
+type: note
 status: active
-microservice: safe-socket
-priority: high
 tags:
-- '#domain/networking'
-- '#service/safe-socket'
+- '#service/08-Base-Scripts'
+- '#type/note'
 - '#state/active'
-- '#tier/behavior'
-- '#type/behavior-spec'
-- '#zone/1-frozen'
+- '#zone/3-fleet'
 ---
 # Feature: SafeSocket Connection Lifecycle
 

@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: safe-socket
-repo: safe-socket
-feature_id: FEAT-008
+microservice: 08-Base-Scripts
+type: note
 status: active
 tags:
-- '#service/safe-socket'
+- '#service/08-Base-Scripts'
+- '#type/note'
 - '#state/active'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#zone/3-fleet'
 ---
 # Feature: Resource Boundaries & Hardening
 

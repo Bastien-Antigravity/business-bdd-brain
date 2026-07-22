@@ -1,14 +1,12 @@
 ---
-feature_id: FEAT-000
-type: behavior-spec
+microservice: 08-Base-Scripts
+type: note
 status: active
-microservice: sandbox-testing
 tags:
-- '#service/sandbox-testing'
+- '#service/08-Base-Scripts'
+- '#type/note'
 - '#state/active'
-- '#tier/behavior'
-- '#type/behavior-spec'
-- '#zone/1-frozen'
+- '#zone/3-fleet'
 ---
 # FEAT-000: System Bootstrap & Heartbeat
 

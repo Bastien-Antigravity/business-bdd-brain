@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: notif-server
-repo: notif-server
-feature_id: FEAT-002
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/notif-server'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: External Sender Integrations (Reliability)
 

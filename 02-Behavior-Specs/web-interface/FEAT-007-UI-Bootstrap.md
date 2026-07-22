@@ -1,11 +1,11 @@
 ---
-microservice: web-interface
-type: spec
-status: frozen
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/web-interface'
-- '#type/spec'
-- '#state/frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
 - '#zone/3-fleet'
 ---
 # Feature: Web Interface Bootstrap

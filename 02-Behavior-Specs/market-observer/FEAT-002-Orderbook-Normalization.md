@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: market-observer
-repo: market-observer
-feature_id: FEAT-002
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/market-observer'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: Orderbook Normalization
 

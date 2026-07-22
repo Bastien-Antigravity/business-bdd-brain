@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: fundamental-analysis
-repo: fundamental-analysis
-feature_id: FEAT-002
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/fundamental-analysis'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: Valuation Metric Calculation
 

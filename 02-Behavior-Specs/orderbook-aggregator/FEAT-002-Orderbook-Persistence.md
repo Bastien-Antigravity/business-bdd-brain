@@ -1,13 +1,12 @@
 ---
-microservice: orderbook-aggregator
-type: spec
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/orderbook-aggregator'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # 📝 Behavior Spec: FEAT-002 Orderbook Persistence
 

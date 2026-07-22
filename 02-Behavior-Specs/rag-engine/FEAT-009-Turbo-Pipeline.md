@@ -9,7 +9,7 @@ tags:
 - '#state/draft'
 - '#tier/behavior'
 - '#type/spec'
-- '#performance'
+- '#domain/performance'
 ---
 # Feature: Turbo Pipeline Optimization
 

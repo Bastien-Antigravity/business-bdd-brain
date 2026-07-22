@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: log-server
-repo: log-server
-feature_id: FEAT-005
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/log-server'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: Heartbeat & Client Liveness
 

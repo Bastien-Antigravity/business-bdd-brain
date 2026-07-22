@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: log-server
-repo: log-server
-feature_id: FEAT-006
+microservice: 08-Base-Scripts
+type: note
 status: active
 tags:
-- '#service/log-server'
+- '#service/08-Base-Scripts'
+- '#type/note'
 - '#state/active'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#zone/3-fleet'
 ---
 # Feature: Handshake Identity (Layout Hack)
 

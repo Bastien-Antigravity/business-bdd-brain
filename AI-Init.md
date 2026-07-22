@@ -1,14 +1,15 @@
 ---
-microservice: business-bdd-brain
+microservice: 02-Business-BDD
 type: governance
 status: active
 tags:
-- '#zone/1-frozen'
-- '#service/business-bdd-brain'
+- '#service/02-Business-BDD'
 - '#type/governance'
 - '#state/active'
+- '#zone/3-fleet'
 ---
-# ⚡ AI Initialization: business-bdd-brain
+
+# ⚡ AI Initialization: 02-Business-BDD
 
 > [!IMPORTANT] MANDATORY INITIALIZATION
 > Copy and paste this prompt when starting a new session in this repository:
@@ -16,5 +17,5 @@ tags:
 > "1. Read the ecosystem map in **[[Ecosystem-Map-MOC]]**."
 > "2. Load project constraints from **[[AI-Project-DNA]]**."
 > "3. Restore session state from **[[AI-Session-State]]**."
-> "4. **Sentinel Audit**: Run `python 07-Core-KMS/Scripts/Brain-Health-Audit.py` and resolve any drift."
-> "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `07-Core-KMS/Role-Prompts/`."
+> "4. **Sentinel Audit**: Run `python core-kms-brain/Scripts/Brain-Health-Audit.py` and resolve any drift."
+> "5. **Squad Protocol**: You are now the **Lead Developer**. Identify and hire the required **Specialists** from `core-kms-brain/Role-Prompts/03-Developer/Squad/`."

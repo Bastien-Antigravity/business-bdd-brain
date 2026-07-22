@@ -1,15 +1,12 @@
 ---
-type: spec
-microservice: universal-logger
-repo: universal-logger
-feature_id: FEAT-011
-status: draft
+microservice: 08-Base-Scripts
+type: note
+status: active
 tags:
-- '#service/universal-logger'
-- '#state/draft'
-- '#tier/behavior'
-- '#type/spec'
-- '#zone/1-frozen'
+- '#service/08-Base-Scripts'
+- '#type/note'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 # Feature: FFI Memory & Buffer Management
 
