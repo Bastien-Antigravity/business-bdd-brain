@@ -37,7 +37,7 @@ tags:
 - **Given** a fully enriched chunk
 - **When** the pipeline stores the chunk
 - **Then** the raw content must be saved to the SQLite Parent Store
-- **And** the semantic embedding must be upserted to the Chroma Vector Store
+- **And** the semantic embedding must be upserted to the PostgreSQL pgvector Store
 - **And** the document text must be added to the BM25 Lexical Store for keyword matching.
 
 ## 🛠️ Technical Constraints

@@ -1,12 +1,12 @@
---- 
+---
 title: Acceptance Criteria Template
 type: acceptance-criteria
 status: template
 microservice: <target-microservice>
 tags:
-- "#tech/TO-DO"
-- "#tier/TO-DO"
-- "#zone/TO-DO"
+- '#tech/TO-DO'
+- '#tier/TO-DO'
+- '#zone/TO-DO'
 - '#service/<target-microservice>'
 - '#type/acceptance-criteria'
 - '#state/template'

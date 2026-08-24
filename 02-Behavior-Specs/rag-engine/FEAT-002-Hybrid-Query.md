@@ -33,7 +33,7 @@ tags:
 - **And** the chunk alignment status and linked Obsidian notes must be retrieved from the Alignment Service.
 
 ## 🛠️ Technical Constraints
-- **Performance**: The underlying queries to Chroma and BM25 MUST be executed asynchronously in parallel.
+- **Performance**: The underlying queries to pgvector and Postgres FTS MUST be executed asynchronously in parallel.
 - **Algorithm**: The RRF constant `k` should be set to 60 by default.
 
 ## ✅ Acceptance Criteria (Definition of Done)
