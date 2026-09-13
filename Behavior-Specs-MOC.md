@@ -124,3 +124,10 @@ This index groups behavioral specifications by their respective microservices.
 
 ## [[Web-Interface-Hub|web-interface]]
 - [[FEAT-007-UI-Bootstrap]]
+
+## [[Docker-Deployment-Hub|docker-deployment]]
+- [[FEAT-001-Multi-Mode-Orchestration]]
+- [[FEAT-002-Zero-Knowledge-Secret-Isolation]]
+- [[FEAT-003-Dynamic-Configuration-Resolution]]
+- [[FEAT-004-Health-Gating-And-Readiness]]
+
