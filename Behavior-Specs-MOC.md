@@ -117,6 +117,8 @@ This index groups behavioral specifications by their respective microservices.
 - [[FEAT-004-FFI-Handle-Lifecycle]]
 - [[FEAT-005-Async-Language-Integration]]
 - [[FEAT-006-Config-Injection]]
+- [[FEAT-007-Polyglot-Caller-Metadata]]
+- [[FEAT-008-Contextual-Metadata-Enrichment]]
 - [[FEAT-009-Excel-VBA-Integration]]
 - [[FEAT-010-Cross-Platform-Compilation]]
 - [[FEAT-011-Memory-Buffer-Management]]
