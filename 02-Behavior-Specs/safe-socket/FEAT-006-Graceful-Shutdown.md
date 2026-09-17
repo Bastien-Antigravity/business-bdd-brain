@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: safe-socket
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/safe-socket'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

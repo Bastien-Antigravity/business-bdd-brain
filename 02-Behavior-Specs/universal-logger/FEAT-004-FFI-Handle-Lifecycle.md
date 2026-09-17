@@ -1,10 +1,12 @@
 ---
-microservice: 08-Base-Scripts
-type: note
+microservice: universal-logger
+type: spec
 status: active
 tags:
-- '#service/08-Base-Scripts'
-- '#type/note'
+- '#service/universal-logger'
+- '#domain/observability'
+- '#layer/library'
+- '#type/spec'
 - '#state/active'
 - '#zone/3-fleet'
 ---

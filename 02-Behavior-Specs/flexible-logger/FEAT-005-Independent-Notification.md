@@ -1,10 +1,11 @@
 ---
-microservice: 08-Base-Scripts
-type: note
+microservice: flexible-logger
+type: spec
 status: active
 tags:
-- '#service/08-Base-Scripts'
-- '#type/note'
+- '#service/flexible-logger'
+- '#domain/observability'
+- '#type/spec'
 - '#state/active'
 - '#zone/3-fleet'
 ---
