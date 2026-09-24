@@ -2,6 +2,11 @@
 microservice: 02-Business-BDD
 type: governance
 status: active
+tags:
+- '#service/02-Business-BDD'
+- '#type/governance'
+- '#state/active'
+- '#zone/3-fleet'
 ---
 
 # ⚡ AI Initialization: 02-Business-BDD

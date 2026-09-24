@@ -10,18 +10,13 @@ tags:
 ---
 # Behavior Specs MOC
 
-This index groups behavioral specifications by their respective microservices.
+This index groups behavioral specifications for the core Bastien-Antigravity base ecosystem microservices.
 
 ## [[Config-Server-Hub|config-server]]
 - [[FEAT-001-Handshake-Identity]]
 - [[FEAT-002-Atomic-State-Swap]]
 - [[FEAT-003-Broadcast-Propagation]]
 - [[FEAT-004-Persistence-Safety]]
-
-## [[Data-Ingestor-Hub|data-ingestor]]
-- [[FEAT-001-Data-Transformation]]
-- [[FEAT-002-Batch-Persistence]]
-- [[FEAT-003-Orderbook-Ingestion-E2E]]
 
 ## [[Distributed-Config-Hub|distributed-config]]
 - [[FEAT-001-Configuration-Discovery]]
@@ -37,10 +32,11 @@ This index groups behavioral specifications by their respective microservices.
 - [[FEAT-011-Memory-Space-Unification]]
 - [[FEAT-012-Handle-Safety]]
 
-## [[Enhanced-Backtesting-Hub|enhanced-backtesting]]
-- [[Backtest-Engine]]
-- [[Regime-Detection]]
-- [[Unified-Backtest-Storage]]
+## [[Docker-Deployment-Hub|docker-deployment]]
+- [[FEAT-001-Multi-Mode-Orchestration]]
+- [[FEAT-002-Zero-Knowledge-Secret-Isolation]]
+- [[FEAT-003-Dynamic-Configuration-Resolution]]
+- [[FEAT-004-Health-Gating-And-Readiness]]
 
 ## [[Flexible-Logger-Hub|flexible-logger]]
 - [[FEAT-001-Log-Levels-Filtering]]
@@ -49,10 +45,6 @@ This index groups behavioral specifications by their respective microservices.
 - [[FEAT-004-Object-Pooling]]
 - [[FEAT-005-Independent-Notification]]
 - [[FEAT-006-Network-Serialization]]
-
-## [[Fundamental-Analysis-Hub|fundamental-analysis]]
-- [[FEAT-001-Financial-Scraping]]
-- [[FEAT-002-Valuation-Metrics]]
 
 ## [[Log-Server-Hub|log-server]]
 - [[FEAT-001-TCP-Ingestion-Capnp]]
@@ -65,11 +57,6 @@ This index groups behavioral specifications by their respective microservices.
 - [[FEAT-008-Terminal-UI-Enhancements]]
 - [[FEAT-009-Ecosystem-Bootstrapping]]
 
-## [[Market-Observer-Hub|market-observer]]
-- [[FEAT-001-Websocket-Reconnection]]
-- [[FEAT-002-Orderbook-Normalization]]
-- [[FEAT-003-Heartbeat-Monitoring]]
-
 ## [[Microservice-Toolbox-Hub|microservice-toolbox]]
 - [[FEAT-001-Docker-Guard]]
 - [[FEAT-002-Polyglot-Parity]]
@@ -81,15 +68,6 @@ This index groups behavioral specifications by their respective microservices.
 - [[FEAT-001-Tag-Based-Routing]]
 - [[FEAT-002-Sender-Integrations]]
 - [[FEAT-003-Unified-Ingestion]]
-
-## [[Ontime-Scheduler-Hub|ontime-scheduler]]
-- [[FEAT-001-Go-Migration]]
-- [[FEAT-008-Scheduler-Migration]]
-- [[LEGACY-Python-Behavior]]
-
-## [[Orderbook-Aggregator-Hub|orderbook-aggregator]]
-- [[FEAT-001-Orderbook-Ingestion]]
-- [[FEAT-002-Orderbook-Persistence]]
 
 ## [[Safe-Socket-Hub|safe-socket]]
 - [[FEAT-000-Connection-Lifecycle]]

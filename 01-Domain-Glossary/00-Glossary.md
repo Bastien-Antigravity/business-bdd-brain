@@ -47,7 +47,7 @@ This glossary defines the shared terminology used across all Behavior-Driven Dev
 | **Config Server** | The gRPC-based configuration distribution server. |
 | **Notif Server** | The notification relay service. |
 | **Sandbox** | The `sandbox-testing` repository where behavior specs are executed as automated tests. |
-| **TimescaleDB** | A time-series database extension for PostgreSQL used for high-performance persistence of market and orderbook data. |
+| **TimescaleDB** | A time-series database extension for PostgreSQL used for high-performance persistence and analytical telemetry. |
 | **Hypertable** | The primary abstraction in TimescaleDB that automatically partitions data into manageable "chunks" based on time. |
 | **Tele-Remote** | The Telegram-based gateway for remote management and tele-command execution across the fleet. |
 
@@ -62,12 +62,3 @@ This glossary defines the shared terminology used across all Behavior-Driven Dev
 | **Sentinel Audit** | A compliance check performed by the AI to ensure repository integrity. |
 | **Backpressure** | A flow-control mechanism that prevents a producer from overwhelming a consumer when buffers are full. |
 | **Ecosystem Bootstrapping** | The standardized startup sequence for services, following the Loading Law: Bridge (Config Server) -> Local YAML -> CLI Overrides. |
-
-## Trading Domains
-
-| Term | Definition |
-|------|-----------|
-| **Orderbook Normalization** | The process of converting exchange-specific orderbook formats into a unified internal schema. |
-| **Regime Detection** | Algorithmic identification of current market states (e.g., trending, range-bound, high-volatility). |
-| **Backtest Engine** | The simulation environment for validating trading strategies against historical data. |
-| **UnifiedOrderBook** | The standardized internal schema for market depth data, merging volume from multiple brokers and exchanges. |
