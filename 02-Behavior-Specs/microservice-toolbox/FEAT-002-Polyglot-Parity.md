@@ -29,7 +29,7 @@ tags:
 - **And** it must return the result in a standardized format (e.g. JSON string) to ensure consistency across the FFI boundary
 
 ### Scenario 3: Shared Memory Space
-- **Given** a process with multiple libraries linked (e.g. `libdistconf`, `libunilog`)
+- **Given** a process with multiple libraries linked (e.g. `libdistconf`, `libunilog`, `libnotif`)
 - **When** an update is applied in one library
 - **Then** the underlying shared memory state in the Go runtime must be updated
 - **And** all other language wrappers must observe the change immediately

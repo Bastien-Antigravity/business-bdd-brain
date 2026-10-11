@@ -30,12 +30,13 @@ tags:
 - **Then** the server must send the alert to BOTH Telegram and Gmail
 - **And** it must ensure the message content is correctly formatted for each destination
 
-### Scenario 3: Default Routing (No Tag Match)
-- **Given** a notification with a tag `UNKNOWN`
-- **And** no mapping exists for this tag
+### Scenario 3: Default Routing (No Tag Match or Unmapped Level)
+- **Given** a notification with unmapped tags `[UNKNOWN]` or an unmapped severity level or no tags
+- **And** no active provider mapping exists for this tag/level
 - **When** the message is processed
-- **Then** the server should use the `DefaultSender` (if configured)
-- **Or** it should log a "Routing Failure" and discard the message to prevent silent loss
+- **Then** the server must route the message directly to the `DefaultSender` (Telegram)
+- **And** the message content must be prefixed with a clear visual banner: `⚠️ [Default Fallback - <Reason>]` so operators immediately notice the fallback in the notification
+- **And** it must log an informative message in daemon logs indicating default routing was used
 
 ## 🛠️ Technical Constraints
 - **Config**: Routing maps must be loaded from `distributed-config` at startup.

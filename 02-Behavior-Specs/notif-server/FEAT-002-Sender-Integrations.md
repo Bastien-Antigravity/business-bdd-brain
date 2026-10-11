@@ -35,6 +35,12 @@ tags:
 - **Then** it must retrieve the `BotToken` from the encrypted `distributed-config` store
 - **And** it must NOT store the plaintext token in memory beyond the sender instance
 
+### Scenario 4: Fail-Fast Telegram Credential Pre-flight Check
+- **Given** the notification server initializes on daemon startup
+- **When** credentials are read strictly from `capabilities.notif_server`
+- **Then** the bot token must NOT fall back to other services (such as `tele_remote`)
+- **And** if the token is missing, un-decryptable, or rejected by the Telegram API (`getMe`), the service must immediately fail fast (`os.Exit(1)`)
+
 ## 🛠️ Technical Constraints
 - **Concurrency**: Use a worker pool or bounded goroutines to prevent overloading external APIs.
 - **Timeout**: Each API call MUST have a strict 10-second timeout.
