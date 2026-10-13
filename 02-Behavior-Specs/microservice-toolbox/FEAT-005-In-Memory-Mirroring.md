@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: microservice-toolbox
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/microservice-toolbox'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

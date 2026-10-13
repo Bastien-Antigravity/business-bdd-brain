@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: sandbox-testing
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/sandbox-testing'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

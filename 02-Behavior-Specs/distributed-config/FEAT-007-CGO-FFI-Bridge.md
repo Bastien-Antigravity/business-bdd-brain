@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: distributed-config
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/distributed-config'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

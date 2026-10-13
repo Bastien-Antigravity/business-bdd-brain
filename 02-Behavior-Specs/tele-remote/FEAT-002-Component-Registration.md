@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: tele-remote
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/tele-remote'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'

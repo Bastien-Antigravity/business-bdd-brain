@@ -1,9 +1,9 @@
 ---
-microservice: 08-Base-Scripts
+microservice: web-interface
 type: note
 status: active
 tags:
-- '#service/08-Base-Scripts'
+- '#service/web-interface'
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'
