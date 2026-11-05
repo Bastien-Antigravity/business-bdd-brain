@@ -7,7 +7,6 @@ tags:
 - '#type/note'
 - '#state/active'
 - '#zone/3-fleet'
-- '#service/safe-socket'
 ---
 # Feature: Shared Memory (SHM) Transport
 
