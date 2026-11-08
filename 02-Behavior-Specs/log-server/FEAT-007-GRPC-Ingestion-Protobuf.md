@@ -34,7 +34,21 @@ tags:
 - **Then** the gRPC service must return a `LogResponse` with `success: true`
 - **And** it must complete the call in under 10ms.
 
+### Scenario 4: Real-Time Server-Side Streaming (StreamLogs)
+- **Given** an active gRPC client connection from `web-interface`
+- **When** the client invokes `rpc StreamLogs(StreamLogsRequest)`
+- **Then** the server must subscribe to the internal Tokio broadcast channel
+- **And** stream each newly ingested log message over HTTP/2 with sub-millisecond latency
+- **And** apply optional `service_name` and `min_level` filters if specified in the request.
+
+### Scenario 5: Buffered Tail Query (GetTailLogs)
+- **Given** recent log entries deposited in the in-memory circular ring buffer (`LogRingBuffer`)
+- **When** a client invokes `rpc GetTailLogs(TailLogsRequest)` with limit $N$
+- **Then** the server must return up to $N$ entries matching the requested filters
+- **And** include the total ingested counter in the `TailLogsResponse`.
+
 ## 🛠️ Technical Constraints
 - **Framework**: MUST use `Tonic` (Rust) for the gRPC server implementation.
-- **Protocol**: MUST use standard Protobuf v3 definitions.
-- **Concurrency**: Handle gRPC requests asynchronously using Tokio tasks.
+- **Protocol**: MUST use standard Protobuf v3 definitions (`log_service.proto`).
+- **Concurrency**: Handle gRPC requests asynchronously using Tokio tasks and broadcast channels.
+- **Memory Safety**: In-memory ring buffer MUST be strictly bounded to 5,000 entries.
