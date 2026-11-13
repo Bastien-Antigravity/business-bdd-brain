@@ -35,7 +35,7 @@ This glossary defines the shared terminology used across all Behavior-Driven Dev
 | **JSONB** | The binary-optimized JSON format used in PostgreSQL for storing semi-structured broker metadata and event payloads. |
 | **FFI Bridge** | A cross-language interface that allows high-level languages (Python/VBA) to call low-level Go or Rust performance tiers. |
 | **Bidirectional Routing** | A communication pattern where commands can be sent to a service, and the service can return asynchronous acknowledgments or data updates. |
-| **Docker Guard** | A safety mechanism within the toolbox that detects containerized environments and automatically adjusts network binding (e.g., 127.0.0.1 to Container IP). |
+| **Docker Guard** | A configuration safeguard (`config` CLI parser) that detects containerized environments (`DOCKER_ENV=true` or `/.dockerenv`) and suppresses CLI network overrides (`--host`, `--port`, `--grpc_host`, `--grpc_port`) so container YAML DNS settings remain intact; `connectivity.Resolver` preserves configured `AppConfig` IPs/hosts/ports verbatim without `0.0.0.0` rewriting. |
 | **Microservice Toolbox** | The shared internal library containing common bootstrapping, networking, and resilience patterns used by all services. |
 | **Handshake Identity** | The initial authentication and registration phase where a client identifies its service name and capability tier to a server. |
 

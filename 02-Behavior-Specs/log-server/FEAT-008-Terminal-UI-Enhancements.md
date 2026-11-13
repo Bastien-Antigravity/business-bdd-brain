@@ -20,12 +20,12 @@ tags:
 - **Given** a formatted log string where the log level is located at indices `70` to `80`
 - **When** the `LogWriter` outputs to `STDOUT`
 - **Then** it must extract the substring at `[70:80]` and trim whitespace
-- **And** it must identify the level (INFO, WARN, ERROR, DEBUG).
+- **And** it must identify the canonical `flexible-logger` level (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`, and domain levels `STREAM`, `LOGON`, `LOGOUT`, `TRADE`, `SCHEDULE`, `REPORT`).
 
 ### Scenario 2: ANSI Color Injection
 - **Given** a detected log level
-- **When** the level is `ERROR` or `FATAL`, it must be colored **Red**
-- **When** the level is `WARN`, it must be colored **Yellow**
+- **When** the level is `ERROR` or `CRITICAL`, it must be colored **Red**
+- **When** the level is `WARNING`, it must be colored **Yellow**
 - **When** the level is `INFO`, it must be colored **Green**
 - **When** the level is `DEBUG`, it must be colored **Blue**
 - **Then** the final output line must contain the appropriate ANSI escape codes.

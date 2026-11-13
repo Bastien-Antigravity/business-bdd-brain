@@ -16,26 +16,26 @@ tags:
 
 ## 🎬 Scenarios (Gherkin)
 
-### Scenario 1: Loopback Translation in Container
-- **Given** a microservice running inside a Docker container (detection via `/.dockerenv`)
-- **And** the configuration requests a bind to `127.0.0.1`
-- **When** the toolbox initializes the network layer
-- **Then** it should automatically resolve the primary network interface IP of the container
-- **And** it should bind to that IP instead of loopback to allow external discovery
+### Scenario 1: Config-Verbatim Preservation in Container (`connectivity.Resolver`)
+- **Given** a microservice running inside a Docker container (detection via `/.dockerenv` or `DOCKER_ENV=true`)
+- **And** the validated `AppConfig` specifies a configured IP/host and port (e.g., `127.0.0.1` or `config-server`)
+- **When** the toolbox resolves the bind or capability address via `connectivity.Resolver`
+- **Then** it must preserve the configured `AppConfig` IP/host and port verbatim without rewriting to `0.0.0.0` or substituting fallback addresses
+- **And** it must fail fast if the configured IP or port is empty
 
 ### Scenario 2: Suppression of CLI Network Overrides
 - **Given** a containerized microservice
-- **When** a user attempts to override the host via CLI flag `--host 192.168.1.50`
+- **When** a user attempts to override the host or port via CLI flags (`--host 192.168.1.50`, `--port`, `--grpc_host`, `--grpc_port`)
 - **Then** the Docker Guard should detect the container environment
-- **And** it should strictly ignore the CLI override to preserve the orchestrated network settings
+- **And** it should strictly ignore the CLI override to preserve the orchestrated YAML network settings
 - **And** it should log a warning that the override was suppressed
 
 ### Scenario 3: Local Development (No Docker)
 - **Given** a microservice running directly on a host OS (no `/.dockerenv`)
 - **When** the user provides `--host 0.0.0.0` via CLI
 - **Then** the toolbox should respect the override
-- **And** it should NOT perform any automatic loopback translation
+- **And** `connectivity.Resolver` must still preserve the resulting `AppConfig` host/port verbatim
 
 ## 🛠️ Technical Constraints
-- **Detection**: MUST check for the existence of `/.dockerenv` or environment variables like `KUBERNETES_SERVICE_HOST`.
-- **Flags**: Impacted flags: `--host`, `--port`, `--ip`.
+- **Detection**: MUST check for the existence of `/.dockerenv` or environment variables like `DOCKER_ENV=true` / `KUBERNETES_SERVICE_HOST`.
+- **Flags**: Impacted flags: `--host`, `--port`, `--grpc_host`, `--grpc_port`.

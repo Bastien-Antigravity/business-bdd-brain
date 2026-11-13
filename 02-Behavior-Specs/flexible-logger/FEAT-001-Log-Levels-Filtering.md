@@ -31,11 +31,11 @@ tags:
 - **Then** the priority must follow this order: `DEBUG` < `INFO` < `WARNING` < `ERROR` < `CRITICAL`
 - **And** a logger set to `L` must accept all messages where `MessageLevel >= L`
 
-### Scenario 3: Panic/Fatal Behavior
-- **Given** a message at `CRITICAL` level
-- **When** logged via `Log.Fatal()`
-- **Then** the message must be flushed to all sinks immediately
-- **And** the application must terminate with exit code 1
+### Scenario 3: Critical Severity Flush
+- **Given** a message at `CRITICAL` level (severity `11`)
+- **When** logged via `Log.Critical(...)`
+- **Then** the message must be dispatched through all active sinks/notifiers without filtering
+- **And** callers handling fatal boot/cold-path failures flush and exit immediately with exit code 1
 
 ## 🛠️ Technical Constraints
 - **Performance**: Filtering MUST happen before any string formatting (`fmt.Sprintf`) or object allocation to minimize CPU overhead for dropped logs.
