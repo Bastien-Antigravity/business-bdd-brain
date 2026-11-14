@@ -37,5 +37,5 @@ tags:
 - **And** `connectivity.Resolver` must still preserve the resulting `AppConfig` host/port verbatim
 
 ## 🛠️ Technical Constraints
-- **Detection**: MUST check for the existence of `/.dockerenv` or environment variables like `DOCKER_ENV=true` / `KUBERNETES_SERVICE_HOST`.
+- **Detection**: MUST check for environment variables like `DOCKER_ENV=true`
 - **Flags**: Impacted flags: `--host`, `--port`, `--grpc_host`, `--grpc_port`.
